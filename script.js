@@ -24,7 +24,7 @@ const revenueLineChartConfig = {
   data: revenueLineChartData, // pass the data defined above
   options: {
     responsive: true,
-    maintainAspectRatio: false, // // to place inside a sized container
+    maintainAspectRatio: false, // to place inside a sized container
     plugins: {
       title: {
         display: true,
