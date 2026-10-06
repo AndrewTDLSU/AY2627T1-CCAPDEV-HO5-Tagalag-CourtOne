@@ -57,7 +57,7 @@ const bookingsBarGraphData = {
   ]
 };
 
-// 3. config
+// config
 const bookingsBarGraphConfig = {
   type: 'bar', 
   data: bookingsBarGraphData,
