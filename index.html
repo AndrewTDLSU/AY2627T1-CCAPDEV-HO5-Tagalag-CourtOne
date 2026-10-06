@@ -1,1 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Chart.js Demo</title>
 
+        <!-- main bootstrap --> 
+        <link rel="stylesheet" href="bootstrap-4.6.2-dist/css/bootstrap.min.css">
+        
+        <style>
+        .chart-container {
+            position: relative;
+            height: 40vh;
+            width: 100%;
+        }
+        </style>
+    </head>
+    <body>
+
+        <h1>CourtOne Data Samples</h1>
+        <p>by Andrew Tagalag of N24 Group 1</p>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Revenue per Month
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="revenueLineChart"></canvas> <!--canvas element for chart--> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Bookings per Month
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="bookingsBarGraph"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Court Usage per Venue (For Venue Owner/Staff)
+                        </div>
+                        <div class="card-body">
+                            <div class="chart-container">
+                                <canvas id="courtUsagePieChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- scripts --> 
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+        <script src="script.js"></script>
+
+    </body>
+</html>
